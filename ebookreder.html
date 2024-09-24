@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Georgia, serif;
+        }
+        .book-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            background-color: white;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
+        .blockquote-footer {
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            bottom: -50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Book Reader</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Genres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Authors</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Book Reading Section -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="mt-5 text-center">The Great Gatsby</h1>
+            <p class="text-center text-muted">by F. Scott Fitzgerald</p>
+            <div class="book-content">
+                <p><strong>Chapter 1</strong></p>
+                <p>
+                    In my younger and more vulnerable years my father gave me some advice that I’ve been turning over in my mind ever since.
+                    “Whenever you feel like criticizing any one,” he told me, “just remember that all the people in this world haven’t had the advantages that you’ve had.”
+                </p>
+                <p>
+                    He didn’t say any more but we’ve always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that.
+                    In consequence, I’m inclined to reserve all judgments, a habit that has opened up many curious natures to me and also made me the victim of not a few veteran bores.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Cards -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Book Info Card -->
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="https://i0.wp.com/americanwritersmuseum.org/wp-content/uploads/2018/02/CK-3.jpg?resize=267%2C400&ssl=1" class="card-img-top" alt="The Great Gatsby">
+                <div class="card-body">
+                    <h5 class="card-title">The Great Gatsby</h5>
+                    <p class="card-text">A classic novel written by F. Scott Fitzgerald, first published in 1925.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Author Info Card -->
+        <div class="col-lg-4">
+            <div class="card">
+                <img src="https://shortstoryproject.com/wp-content/uploads/2021/10/F.-Scott-Fitzgerald-scaled-1.jpg" class="card-img-top" alt="F. Scott Fitzgerald">
+                <div class="card-body">
+                    <h5 class="card-title">F. Scott Fitzgerald</h5>
+                    <p class="card-text">F. Scott Fitzgerald was an American author, best known for his novel The Great Gatsby.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Description Card -->
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Book Description</h5>
+                    <p class="card-text">The Great Gatsby explores themes of wealth, love, and the American Dream in the 1920s.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Carousel for Reader Reviews -->
+<div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner text-center">
+        <!-- Review 1 -->
+        <div class="carousel-item active">
+            <blockquote class="blockquote">
+                <p>"The Great Gatsby is a timeless classic. Fitzgerald's prose is beautiful and the themes are still relevant today."</p>
+                <footer class="blockquote-footer">Aigerim, <cite title="Source Title">Astana</cite></footer>
+            </blockquote>
+        </div>
+        <!-- Review 2 -->
+        <div class="carousel-item">
+            <blockquote class="blockquote">
+                <p>"I couldn't put this book down. It's such a deep dive into the human condition, love, and wealth."</p>
+                <footer class="blockquote-footer">Daniyar, <cite title="Source Title">Almaty</cite></footer>
+            </blockquote>
+        </div>
+        <!-- Review 3 -->
+        <div class="carousel-item">
+            <blockquote class="blockquote">
+                <p>"An unforgettable novel with rich characters and a haunting message. A must-read!"</p>
+                <footer class="blockquote-footer">Madina, <cite title="Source Title">Shymkent</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+    <!-- Adjusted buttons for the carousel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
